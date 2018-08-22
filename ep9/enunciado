@@ -1,0 +1,45 @@
+Creative Problem 3.2.37 (Level-order traversal; Algs4)
+
+Faça o Creative Problem 3.2.37 (Level-order traversal) de Algs4.
+
+Leia o Enunciado++ 
+
+Imagem de Victor Sena Molero
+Creative Problem 3.2.37 (Level-order traversal; Algs4) - Enunciado++
+por Victor Sena Molero - quinta, 7 Abr 2016, 16:15
+ 
+
+Este exercício trata de Árvores Binárias de Busca (ABBs). Dado um N, um M, uma sequência de N inteiros e uma sequência de M inteiros, deve ser implementada uma classe LevelTraversal.java com uma main que faz o procedimento seguinte:
+
+Primeiro, monte uma ABB (não-balanceada) com os N inteiros dados no início do programa inseridos na ordem dada (mudar a ordem vai acarretar em uma resposta errada). Você pode usar a implementação de BST da biblioteca. Depois, para cada um dos M inteiros, imprima toda a sub-árvore do nó que tem como valor este inteiro da forma descrita pelo enunciado (primeiro por distância da raíz e, depois, da esquerda pra direita.
+
+Entrada: A entrada vai conter, na primeira linha, dois inteiros, N e M representando a quantidade de inteiros a serem inseridos na BST e a quantidade de sub-árvores a serem impressas posteriormente. As linha seguinte contém N inteiros, sendo que o i-ésimo é o ai tal que -2^31 <= ai < 2^31 e tal que todos eles são distintos entre si (para todo par i,j onde j != i, ai != aj) representando os valores a serem colocados na BST. As M linhas finais da entrada contém, cada uma, um inteiro bi. É garantido que todo inteiro bi foi inserido em algum momento na árvore (para todo i existe j tal que aj = bi).
+
+Saída: Para cada bi da entrada deve ser impressa uma linha contendo os inteiros da sub-árvore de bi na ordem descrita na entrada separados por espaços (e nada mais). Espaços extras no final da linha podem ser impressos sem problemas (mas não precisam).
+
+Exemplo de Entrada: Seguindo esta imagem
+
+9 3
+8 3 1 6 4 7 10 14 13
+8 3 13
+
+Exemplo de Saída: (saída correta para o exemplo de entrada)
+
+8 3 10 1 6 14 4 7 13 
+3 1 6 4 7
+13
+
+ 
+
+Imporante:
+
+Certifique-se de que a entrada e a saída estão formatadas como no exemplo para o seu programa (pode perguntar na dúvida), nenhuma outra formatação será aceita. Certifique-se também que seu programa compila e roda normalmente na Rede Linux.
+Abraços.
+ 
+Permalink
+Imagem de Victor Sena Molero
+Re: Creative Problem 3.2.37 (Level-order traversal; Algs4) - Enunciado++
+por Victor Sena Molero - quinta, 7 Abr 2016, 16:15
+ 
+
+Eu tinha escrito Transversal (?) ao invés de Traversal, sorry.
