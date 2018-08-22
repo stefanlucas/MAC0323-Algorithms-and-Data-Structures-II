@@ -1,0 +1,35 @@
+Faça o Creative Exercise 3.2.47 (Random walker) de IntroCS:
+
+http://introcs.cs.princeton.edu/java/32class/
+
+Escreva também um cliente Distribution.java para sua classe, que faz a seguinte simulação. Seu cliente deve receber inteiros positivos N, M e L na linha de comando. Seu cliente deve simular M random walkers, do tempo 0 até o tempo N (portanto cada um dá N passos). Você deve contar quantas vezes cada ponto (i, j) do plano é visitado no total, pelos M passeantes (note que cada passeante pode visitar (i, j) diversas vezes).
+
+Use StdDraw para gerar uma representação gráfica de sua simulação: use cores para representar o quão intensamente um ponto (i, j) foi visitado (p.ex., vermelho para os pontos visitados mais freqüentemente e azul para os pontos não visitados). Para fazer uma imagem "contínua", pinte o quadrado de lado 1 e centro (i, j) da cor correspondente ao ponto (i, j). Sua imagem deve cobrir o quadrado de lado 2L, centrado na origem (L é um dos argumentos dados na linha de comando).
+
+Inclua um relatório e imagens interessantes em seu material.
+
+Observação.  Não deixe de incluir em RandomWalker.java um "unit test" (isto é, um main(), para verificar o funcionamento de sua classe).
+
+Enunciado++
+
+Por favor, esperem estes enunciados antes de codar o problema, vou tentar postá-los com mais velocidade.
+Este exercício tem duas partes. Primeiro você deve fazer o RandomWalker explicado no site e depois você deve fazer o Distribution, explicado no paca. Vou extender o enunciado do dois separadamente. Por favor, mande três arquivos, um Relatorio.<formato> (em pdf ou algum formato de plain-text que eu possa abrir no vim), o RandomWalker.java e o Distribution.java em um arquivo comprimido (de preferência .tar, .tar.gz ou .zip). Já que nesse não precisa alterar nada das bibliotecas padrão, não precisa mandar nada a mais que isso. Se quiserem separar em mais arquivos .java fica à vontade sorriso.
+RandomWalker.java
+
+Você deve enviar uma classe chamada RandomWalker.java com uma main que recebe um argumento na linha de comando:
+
+    Um inteiro N representando a quantidade de passos a serem dados. Seu programa não pode travar ou demorar muito com Ns "grandes" (10^6, por exemplo).
+
+Não precisa seguir a dica de implementação do enunciado do site (pode nomear as funções auxiliares como quiser e organizar seu código do jeito que achar melhor).
+Distribution.java
+
+Você deve enviar uma classe chamada Distribution.java com uma main que recebe três argumentos na linha de comando:
+
+    Um inteiro N que representa a quantidade de passos dados por cada RandomWalker.
+    Um inteiro M que representa a quantidade de RandomWalkers a serem simulados. Mais uma vez, seu programa não deveria quebrar pra Ms grandes (10^6 nos dois não vai ser rápido nunca, mas 10^3 em cada é razoável, por exemplo).
+    Um inteiro L que representa a metade do tamanho do grid para ser impresso, como descrito no enunciado do paca.
+
+A ideia é que pontos visitados mais vezes fiquem mais escuros do que pontos visitados menos vezes (ou vão indo da cor a pra cor b, desde que a e b sejam facilmente distinguiveis).
+Relatorio.<formato>
+
+Um comentário curto que responda à pergunta proposta no enunciado do site, eu prefiro pensar nela como "O que se observa quanto à distância do Walker para a origem com o crescimento de N?" e também inclua algumas observações sobre o comportamento da classe Distribution.
