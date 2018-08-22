@@ -1,0 +1,67 @@
+Web Exercise 4.1.12 (Faster word ladders; Algs4)
+
+Faça o Web Exercise 4.1.12, Faster word ladders, de Algs4:
+
+  http://algs4.cs.princeton.edu/41graph/
+
+Observe que seu programa deve também funcionar quando a lista de palavras contém palavras de comprimentos distintos.  Use o arquivo
+
+  http://www.ime.usp.br/~yoshi/DATA/words.utf-8.txt
+
+para verificar a velocidade de seu programa.
+
+Web Exercise 4.1.12 (Faster word ladders) - Enunciado++
+por Rodrigo Enju - sábado, 7 Mai 2016, 15:48
+ 
+
+Ola sorriso
+
+ 
+
+Como descrito no enunciado, nesse exercício você deve fazer uma modificação do Word Ladder para encontrar a mesma solução de forma mais rápida, assim como considerar palavras de tamanhos diferentes.
+
+Assim como no WordLadder, duas palavras são conectadas se diferem de apenas uma letra. Mas alem disso, duas palavras de tamanhos diferentes são conectadas se seus comprimentos diferirem de 1, e a palavra menor for prefixo da palavra maior.
+
+(Exemplo: 'porta' e 'portal' são conectadas, mas 'lover' e 'clover' não são)
+
+ 
+
+Você deve entregar sua classe em um arquivo chamado FasterWordLadders.java
+
+ 
+
+A entrada será idêntica à do WordLadder.java - um arquivo na linha de comando, e uma lista de palavras na entrada padrão.
+
+O arquivo contem todas as palavras a serem usadas para fazer as conexões, e cada par de palavras lidas na entrada padrão serão as palavras a serem conectadas
+
+Seu programa deve encontrar a menor sequência que liga cada par de palavras, usando as palavras lidas do arquivo.
+
+É garantido que todas as palavras lidas na entrada padrão estarão contidas no arquivo
+
+ 
+
+A saida deve ser da seguinte forma
+
+Para cada par de palavras lidas na entrada padrão, você deve imprimir:
+
+Um inteiro n na primeira linha, indicando o tamanho da sequencia encontrada
+
+E nas próximas n+1 linhas, as palavras da sequência (uma por linha), começando pela primeira palavra do par, e terminando com a segunda palavra do par.
+
+Caso não exista a sequência, imprima apenas "NOT CONNECTED"
+
+ 
+
+Importante: No WordLadder.java original, o programa imprime várias mensagens do sistema, como
+
+"Finished reading word list" , "Finished building graph" , "length = "
+
+Por favor, remova esses textos auxiliares e imprima apenas o que foi pedido aqui.
+ 
+Permalink
+R
+Re: Web Exercise 4.1.12 (Faster word ladders) - Enunciado++
+por Rodrigo Enju - sábado, 7 Mai 2016, 15:53
+ 
+
+Enunciado atualizado (!)

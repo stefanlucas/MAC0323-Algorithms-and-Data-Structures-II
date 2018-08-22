@@ -1,0 +1,88 @@
+Em terras distantes, existe o antigo reino de Macoeze, uma terra próspera e pacífica. Mas a paz está prestes a ser quebrada.  Um poderoso feiticeiro dejesa conquistar o reino. Sabendo de seus planos, os grandes heróis do reino estão se mobilizando para combatê-lo.
+
+O reino é formado por N cidades e M estradas, cada uma das estradas liga duas das cidades, e demora-se um certo tempo para se percorrer cada uma telas. O reino fica em uma região montanhosa e as estradas só podem ser percorridas em uma direção.
+
+Há K heróis no reino, localizados em cidades variadas. Para que consigam derrotar o feiticeiro, todos devem se reunir em uma mesma cidade, estritamente antes da chegada do feiticeiro a esta mesma cidade. Se o feiticeiro encontrar qualquer herói (ou grupo de heróis) antes da reunião, o feiticeiro derrotará aqueles heróis e conquistará o reino (todos os heróis são essenciais para a salvar o reino).
+
+Os heróis então precisam de sua ajuda. Você precisa encontrar um ponto de encontro seguro para que se reúnam.
+
+Definimos uma cidade V como segura para um herói H se existir um caminho que H pode seguir para chegar a V sem ser interceptado pelo feiticeiro, independentemente de como o feiticeiro resolver perambular pelo reino (e ele tem um faro perfeito para procurar os heróis).
+
+Seu trabalho é encontrar as cidades que sejam seguras para todos os heróis.
+
+Todos os heróis, assim como o feiticeiro, movem-se com a mesma velocidade e apenas ao longo das estradas (respeitando as direções (mãos únicas); tratam-se de cidadãos que respeitam as leis e os bons costumes (inclusive o feiticeiro)).
+
+A entrada de seu programa será da seguinte forma:
+
+Na primeira linha, são dados três inteiros N, M e K separados por espaços (3 <= N <= 10000; 3 <= M <= 1000000; 1 <= K <= 200), respectivamente o número de cidades do reino, o número de estradas e o número de heróis.
+
+Em cada uma das próximas M linhas, são dados três inteiros A, B e T separados por espaços (0 <= A, B < N ; 1 <= T <= 10000), representando uma estrada que liga a cidade A até B, e o tempo T que se leva para percorrer essa estrada (atenção: A B T é diferente de B A T).
+
+Em cada uma das próximas K linhas, um único inteiro C (0 <= C < N), indicando a cidade inicial do K-esimo herói. E na próxima linha, um único inteiro F (0 <= F < N), indicando a cidade inicial do feiticeiro.
+
+A saída deve ser da seguinte forma:
+
+Caso existam cidades seguras para o encontro, na primeira linha imprima "VICTORY AND HAPPY EVER AFTER". Na próxima linha, imprima um inteiro S, indicando o número de cidades seguras para o encontro. Na próxima linha, S inteiros separados por espaço, indicando quais são as cidades seguras.
+
+Caso não existam cidades seguras, imprima apenas "DEMISE OF THE KINGDOM".
+
+É garantido que todas as cidades e estradas formam uma única componente fortemente conexa.
+
+R
+No Reinado de MACOEZE - Enunciado++
+por Rodrigo Enju - sexta, 20 Mai 2016, 11:08
+ 
+
+Olá sorriso
+
+O enunciado já está bem completo, não tem muito o que complementar.
+
+O nome do arquivo a ser enviado é BattleForTheKingdom.java. (E, naturalmente, faça um algoritmo eficiente para encontrar a solução)
+
+ 
+
+Bônus:
+
+O enunciado trata as cidades por números. Você pode, opcionalmente, tratar as cidades por nomes. Ou seja, ao invez de uma entrada do tipo:
+
+4 3 2
+
+0 1 6
+
+2 1 5
+
+3 1 3
+
+2
+
+3
+
+0
+
+Você pode aceitar a entrada:
+
+4 3 2
+
+Fortress Port 6
+
+Village Port 5
+
+Castle Port 3
+
+Village
+
+Castle
+
+Fortress
+
+ 
+
+(E claro, nesse caso, a saída também deve ser modificada para imprimir os nomes ao invéz dos números)
+
+Você pode receber até 2 (20 no formato do PACA) pontos bônus se implementar a versão com nomes!
+
+Os nomes não terão espaços, e é garantido que haverão exatamente N nomes distintos.
+
+Note que, caso decida fazer dessa forma, a entrada com números ainda deve funcionar.
+
+Se fizer dessa forma, ao invez de BattleForTheKingdom.java, use o nome GreatBattleForTheKingdom.java. (OBS: Entregue apenas um dos dois arquivos

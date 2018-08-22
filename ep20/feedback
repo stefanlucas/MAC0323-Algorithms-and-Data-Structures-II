@@ -1,0 +1,81 @@
+EXTO TRUNCADO PARA 80 LINHAS
+
+.W.W..W..R...R..R.RR
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+12 | OK
+0 | Tempo de Execução Excedido
+3 | Resposta Errada
+5 | Erro de Execução
+0 | Falha no corretor (avise o monitor)
+
+rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-26/tester/checker/checker' is up to date.
+======= generated_000 ============
+
+real 0m0.146s
+user 0m0.152s
+sys 0m0.016s
+ok não há como satisfazer a expressão
+OK
+======= generated_001 ============
+
+real 0m0.134s
+user 0m0.152s
+sys 0m0.008s
+wrong answer valoração dada não satisfaz a expressão
+Resposta Errada
+======= generated_002 ============
+
+real 0m0.150s
+user 0m0.148s
+sys 0m0.036s
+ok não há como satisfazer a expressão
+OK
+======= generated_003 ============
+
+real 0m0.158s
+user 0m0.152s
+sys 0m0.032s
+wrong answer valoração dada não satisfaz a expressão
+Resposta Errada
+======= generated_004 ============
+
+real 0m0.191s
+user 0m0.352s
+sys 0m0.036s
+ok não há como satisfazer a expressão
+OK
+======= generated_005 ============
+
+real 0m0.413s
+user 0m0.772s
+sys 0m0.104s
+ok não há como satisfazer a expressão
+OK
+======= generated_006 ============
+
+real 0m0.358s
+user 0m0.496s
+sys 0m0.060s
+wrong answer valoração dada não satisfaz a expressão
+Resposta Errada
+======= generated_007 ============
+
+real 0m0.345s
+user 0m0.736s
+sys 0m0.088s
+ok não há como satisfazer a expressão
+OK
+======= generated_008 ============
+
+real 0m8.059s
+user 0m13.472s
+sys 0m0.576s
+ok não há como satisfazer a expressão
+OK
+======= generated_009 ============
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+at SAT.main(SAT.java:63)
+
+Nota: 60

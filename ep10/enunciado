@@ -1,0 +1,54 @@
+Faça o Creative Problem 3.3.30 (Software caching) de Algs4.  Execute FrequencyCounter usando o RedBlackBST original (sem caching) e usando RedBlackBST com caching (use volumes grandes de dados).  Verifique a diferença de desempenho e faça um pequeno relatório.
+
+Enunciado++
+
+R
+Creative Problem 3.3.30 (Software Caching) - Enunciado++
+por Rodrigo Enju - quarta, 13 Abr 2016, 14:29
+ 
+
+Oi sorriso
+
+Nesse exercício vocês devem fazer duas coisas:
+
+Primeiro, FrequencyCounter é implementada usando a tabela de símbolos ST.java de S&W; alterem-na para que ela use uma tabela de símbolos implementada com árvores rubro-negras (use RedBlackBST.java).
+
+E, além disso, alterem a RedBlackBST.java para incluir caching, ou seja, para que armazene em uma variável de instância qual foi o último Node acessado, para que, caso a mesma chave venha a ser usada na iteração seguinte, seja possível acessar ou modificar seu valor em tempo constante.
+
+ 
+
+A Entrada e Saída devem ser as mesmas do FrequencyCounter original, como entrada vocês devem ler um inteiro na linha de comando e um texto da entrada padrão. E a saída deve ser a palavra mais frequente que tenha um número de letras maior ou igual ao inteiro lido, seguido da frequencia dessa palavra.
+
+ 
+
+Teste seu programa usando a RedBlackBST original e a modificada, e compare os desempenhos.
+
+Entregue sua classe principal em um arquivo chamado FrequencyCounterRB.java, e claro não esqueça de entregar também a RedBlackBST modificada (que é a parte mais importante desse exercício).
+
+ 
+
+Agora, sobre o Relatório: Entregue um breve relatório mostrando os resultados obtidos. Este relatório deve ser entregue no formato PDF ou txt
+
+Mostre a comparação de tempo para entradas grandes e vários thresholds (tamanho mínimo das palavras), mostrando a diferença de tempo entre a versão com caching e a versão sem.
+
+Responda também no relatório as seguintes perguntas:
+
+- Em comparação com a versão original no site do livro (que usa a tabela de símbolos ST.java), a sua versão é mais eficiente? Caso sim, como você explica essa diferença?  Como é implementada a tabela de símbolos ST.java?
+
+- A versão com caching é mais rápida que a versão sem caching? Se sim, como você explica essa diferença?
+
+(Edited by Yoshiharu Kohayakawa - original submission Thursday, 7 April 2016, 6:07 PM)
+
+(Edited by Yoshiharu Kohayakawa - original submission Thursday, 7 April 2016, 7:09 PM)
+ 
+Permalink
+R
+Re: Creative Problem 3.3.30 (Software Caching) - Enunciado++
+por Rodrigo Enju - segunda, 11 Abr 2016, 10:36
+ 
+
+Ah, só um toque
+
+ 
+
+Como o exercício é mais simples, o relatório vai ser a parte principal da avaliação, então de bastante atenção a ele sorriso

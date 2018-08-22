@@ -1,0 +1,99 @@
+Web Exercise 4.2.33 (Number of paths in a DAG; Algs4)
+
+Faça o Web Exercise 4.2.33, Number of paths in a DAG, de Algs4:
+
+  http://algs4.cs.princeton.edu/42digraph/
+
+Escreva um programa WordDAG.java que gera um DAG a partir de uma lista de palavras como descrito a seguir.  Execute sua solução de 4.2.33 nos DAGs gerados por WordDAG.
+
+Seja L uma lista de palavras.  Seu programa WordDAG deve criar o grafo dirigido com conjunto de vértices L e arcos (s, t) para todo s e t das seguintes formas: 
+
+1. s e t têm o mesmo comprimento e diferem em exatamente uma letra e, ademais, s é lexicograficamente maior que t (p.ex., s = grown e t = brown).
+
+2. s tem comprimento um maior que t, e t é um prefixo de s (p.ex., s = brown e t = brow).
+
+Seu programa WordDAG deve ser eficiente, de forma a poder processar entradas como
+
+  http://www.ime.usp.br/~yoshi/DATA/words.utf-8.txt
+
+Enunciado++
+
+Imagem de Victor Sena Molero
+Web Exercise 4.2.33 (Number of paths in a DAG; Algs4) - Enunciado++
+por Victor Sena Molero - sexta, 13 Mai 2016, 18:57
+ 
+
+Olá sorriso
+
+Como dito no enunciado, neste problema, você deve implementar uma classe WordDAG.java que gera um DAG à partir de uma lista de palavras, as arestas devem ser inseridas como especificado pelo enunciado. Vocês vão ter que implementar 3 funções obrigatoriamente nesta classe.
+
+Para fazer isso, crie uma classe WordDAG no arquivo WordDAG.java que tem um construtor com a seguinte assinatura
+
+public WordDAG(String[] strings);
+
+Que gera um DAG à partir do vetor de strings passado como argumento. Além disso, crie uma função
+
+public void PrintDag();
+
+Que imprime, num arquivo chamado saida.txt, as arestas do DAG. Para imprimir um DAG, imprima as arestas do dag, uma por linha, sendo que uma aresta é representada por duas strings, a primeira é a origem da aresta e a segunda é o destino (veja o exemplo de saída para mais informações).
+
+E outra função
+
+public void PrintPathCount(String a, String b);
+
+Que imprime, num arquivo chamado saida.txt, a quantidade de caminhos distintos no DAG entre a e b (como especificado no enunciado). Para imprimir isto basta imprimir um inteiro sozinho na saída e nada mais.
+Exemplo de Entrada
+
+String[] strings = {"cobra", "sobra", "sobrar", "cobro", "cobrou", "sobrando", "cobre"}
+
+(note que isso não é dado na entrada padrão, mas sim como argumento do construtor)
+Exemplos de Saída (referente à entrada dada)
+
+saida.txt depois de PrintDag()
+
+cobro cobra
+cobro cobre
+cobre cobra
+cobrou cobro
+sobrar sobra
+sobra cobra
+
+saida.txt depois de PrintPathCount("cobro", "cobra")
+
+2
+
+saida.txt depois de PrintPathCount("sobrando", "cobrou")
+
+0
+
+ 
+ 
+Permalink
+Imagem de Victor Sena Molero
+Exercício Bônus!!!
+por Victor Sena Molero - quarta, 11 Mai 2016, 23:51
+ 
+
+Olá sorriso
+
+O Yoshi propôs um exercício Bônus para esta tarefa.
+
+Teste seu programa em casos como este. No arquivo eu coloquei primeiro as duas palavras origem e destino que devem ser usadas como parâmetros da função PrintPathCount seguidas de todas as palavras que devem ser alimentadas no construtor. Ou seja, você deve jogar da segunda linha para baixo no construtor e chamar PrintPathCount("zzz", "a");
+
+Explique os motivos de sua solução falhar (ou não) neste caso, caso a sua não falhe, explique o que você fez para impedir isso e fale um pouco sobre este problema e os motivos dele ocorrer (o que há de especial sobre o teste que eu dei?). Por favor, ao falar sobre isso, coloque num relatório nomeado relatório com algum formato usual (preferencialemente txt, pdf ou html, me guardo o direito de rejeitar formatos diferentes destes)
+
+Sugestão: Classe BigInteger do Java.
+
+Eu calculei a solução para o caso que dei e a minha resposta foi 18889465931478580854784. Não tive muito tempo para verificar se isso faz algum sentido ou absolutamente nenhum, se alguém achar que está errado, por favor, avise. Tentei apressar isso para poder postar esse desafio o mais cedo o possível.
+
+Abraços.
+ 
+Permalink | Mostrar principal
+Imagem de Victor Sena Molero
+Re: Exercício Bônus!!!
+por Victor Sena Molero - quinta, 12 Mai 2016, 10:56
+ 
+
+Aliás, este exercício vale 30 pontos extra na nota do exercício. Sim, dá pra tirar 130.
+Abraços.
+

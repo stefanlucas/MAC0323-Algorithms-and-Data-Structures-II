@@ -1,0 +1,45 @@
+Web Exercise 4.2.35 (Core vertices; Algs4)
+
+Faça o Web Exercise 4.2.35, Core vertices, de Algs4:
+
+http://algs4.cs.princeton.edu/42digraph/
+
+Enunciado++
+
+Web Exercise 4.2.35 (Core vertices; Algs4) - Enunciado++
+por Victor Sena Molero - terça, 17 Mai 2016, 22:36
+ 
+
+Olá,
+O enunciado deste problema é bem direto. Vão ser dados dois inteiros n e m e uma lista de m arestas, você deve definir quais são os core vertices do grafo dado.
+
+O programa deve se chamar CoreVertices.java e a classe deve se chamar CoreVertices
+
+As arestas são inteiros indexados em 0, ou seja inteiros no intervalo [0,n-1]
+
+Entrada
+
+Na primeira linha, serão dados os inteiros n e m, seguidos de m linhas. Cada linha tem dois inteiros a e b representando uma aresta que vai de a para b. Exemplo:
+
+5 5
+0 1
+0 2
+0 3
+4 0
+0 4
+
+Saída
+
+Deve ser impressa, na saída padrão, uma linha contendo os inteiros representando os índices dos core vertices do grafo, separados por espaços.
+
+0 4
+
+ 
+Permalink
+Imagem de Victor Sena Molero
+Re: Web Exercise 4.2.35 (Core vertices; Algs4) - Enunciado++
+por Victor Sena Molero - quinta, 12 Mai 2016, 23:15
+ 
+
+Sobre este exercício. É importante que se evite montar o Kernel DAG explícitamente. Ou seja, não é necessário (nem se deve) comprimir grupos de vértices do grafo,
+Abraços.

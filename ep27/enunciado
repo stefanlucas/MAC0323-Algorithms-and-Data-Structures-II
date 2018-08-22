@@ -1,0 +1,75 @@
+Probabilidade crítica 3D
+
+Este exercício é um adendo ao Creative Exercise 2.4.18 (Percolação em 3D). Para cada inteiro positivo N, seja p_c^{(N)} a porosidade p tal que se o meio aleatório for gerado com a probabilidade de cada sítio estar aberto igual a p (e bloqueado igual a 1 - p), então a probabilidade de ocorrer percolação é de 50%. (Lembre que a probabilidade de ocorrer percolação cresce monotonamente de 0% a 100%, conforme aumentamos o valor de p).
+
+Escreva um programa que, dado N, estima p_c^{(N)}. Seu programa deve usar os programas que você usou para resolver o Creative Exercise 2.4.18. (Sugestão: use simplesmente o método da bisecção.)
+
+Definimos a probabilidade crítica p_c em três dimensões como sendo o limite de p_c^{(N)} quando N tende ao infinito. Estime p_c, rodando seu programa para valores grandes de N.
+
+Além dos programas, entregue um pequeno relatório, relatando os experimentos que você executou e suas estimativas para p_c.
+
+Probabilidade Crítica 3D - Enunciado++
+por Rodrigo Enju - terça, 15 Mar 2016, 15:54
+ 
+
+Eu já tinha colocado um post mais geral sobre os dois exercícios de percolação aqui, mas como algumas pessoas me pediram, vou colocar alguns outros detalhes.
+
+ 
+
+Probabilidade Crítica
+
+Vocês devem ter percebido ao fazer o exercício 2.4.18 (Percolation in three dimensions) que o gráfico das probabilidades vai de quase 0 para quase 1 em um intervalo muito pequeno. A probabilidade crítica é exatamente a probabilidade que faz com que a chance de percolação seja 50%, ou seja, que está no meio daquele crescimento repentino.
+
+Seu programa deve estimar qual é esta probabilidade crítica.
+
+ 
+
+Entrada
+
+Apenas dois inteiros, o lado da matriz (N) e o número de testes (M), exatamente como o exercício anterior.
+
+ 
+
+Saída
+
+Apenas o valor da probabilidade crítica que você encontrou.
+
+ 
+
+Relatório
+
+Como vocês deve ter notado, junto com o programa vocês devem entregar um pequeno relatório. Ele não precisa ser muito complicado, apenas deve conter uma análise simples dos resultados que você encontrou. 
+
+Dica: O programa tem dois parâmetros (N e M). Um bom relatório contém análises da influência de cada um deles sobre o resultado, e como vocês interpretam esses resultados
+
+ 
+
+Etc
+
+Vocês tem a maior parte do código feito no exercício 2.4.18. Não é necessário escrever de novo o que já está pronto, assim economizam tempo e tem menos chances de errar.
+
+ 
+
+Não é obrigatório, mas me ajudaria muito se o nome do arquivo com sua classe principal fosse "ProbCritica3D.java"
+
+  
+
+Não precisam enviar os arquivos da stdlib sorriso 
+
+ 
+
+Bem, acho que é isso, Abraço!
+
+ 
+ 
+Permalink
+R
+Re: Probabilidade Crítica 3D - Enunciado++
+por Rodrigo Enju - terça, 15 Mar 2016, 15:54
+ 
+
+Opa, cometi um pequeno erro no enunciado.
+
+ 
+
+Já está corrigido, então quem já leu, por favor leia novamente sorriso

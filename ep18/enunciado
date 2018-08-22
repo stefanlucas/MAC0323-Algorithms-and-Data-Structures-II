@@ -1,0 +1,48 @@
+Seja G um grafo (não-dirigido) conexo.  Uma ponte em G é uma aresta cuja remoção desconecta G.  Escreva um programa que recebe como entrada um grafo conexo G e que tem como saída as pontes de G.  Seu programa deve ser linear, isto é, deve ter complexidade de tempo O(V + E).
+
+Sugestão.  Veja o Web Exercise 4.2.30, One-way street theorem, de Algs4:
+
+http://algs4.cs.princeton.edu/42digraph/
+
+Se você não usar esta sugestão e programar um algoritmo diferente, você deve argumentar por que seu algoritmo está correto.
+
+Enunciado++
+
+Detecção de pontes em grafos - Enunciado++
+por Rodrigo Enju - terça, 10 Mai 2016, 14:25
+ 
+
+Olá sorriso
+
+ 
+
+Esse exercício é bem direto. Você deve encontrar todas as pontes do grafo em O(V + E). Entregue sua classe em um arquivo chamado Pontes.java
+
+ 
+
+Entrada: Dois inteiros n e m, seguidos de m pares de inteiros. Sendo n o número de vértices e m o número de arestas do grafo, e cada par de inteiros a e b indica que os vértices a e b são conectados por uma aresta.
+
+Saida: Pares de inteiros, representando as pontes do grafo.
+
+ 
+
+Exemplo:
+
+Entrada:
+4 4
+0 1
+0 2
+1 2
+2 3
+ 
+
+Saída:
+2 3
+ 
+Permalink
+R
+Re: Detecção de pontes em grafos - Enunciado++
+por Rodrigo Enju - terça, 10 Mai 2016, 14:27
+ 
+
+Atualização: Vértices estão sendo indexados a partir de 0 agora

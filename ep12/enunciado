@@ -1,0 +1,55 @@
+Fixe um número real $d>0$ e considere o seguinte processo: geramos pontos $P_1,P_2,\dots$ no quadrado unitário $Q$, aleatoriamente, com cada $P_i$ sorteado independentemente e uniformemente ao acaso em $Q$. Pare o processo quando $P_1,\dots,P_n$, $n>1$, torna-se $d$-conexo (note que o caso $n=1$ é excluído explicitamente).
+
+Naturalmente, o valor de $n$ no processo acima é aleatório, pois os pontos $P_i$ são aleatórios. Escreva um programa que recebe como entrada o número real $d>0$ e um inteiro $T$ e que executa o experimento acima $T$ vezes. Seu programa deve ter como saída o valor médio de $n$ e a variância de $n$ nos $T$ experimentos.
+
+Tente determinar uma relação entre $d$ e $n$ para valores pequenos de $d$. (Sugestão: compare $1/d^2$ e $n/log n$).
+
+Observação. Seu programa será testado para valores pequenos de $d$ e valores grandes de $T$.
+
+Enunciado++
+R
+Limiar de conexidade 2D - Enunciado++
+por Rodrigo Enju - sexta, 22 Abr 2016, 17:15
+ 
+
+Olá sorriso
+
+ 
+
+Nesse exercício, vocês devem modificar o seu código do exercício anterior (Problema da conexidade 2D) para que, ao invez de receber o número de pontos da entrada, gere pontos aleatórios até que todo o sistema seja d-conexo, e encontre a média e a variância desse número de pontos
+
+ 
+
+Entregue seu programa em um arquivo chamado LC2D.java
+
+A entrada será um número real 'd' e um inteiro 'T' na linha de comando. E a saída deve ser apenas dois números reais - a média e a variância encontradas ao longo dos 'T' testes.
+
+Para facilitar a correção, vou pedir que seu programa também aceite um terceiro parâmetro na linha de comando, um inteiro 'S', que caso esteja presente, deve ser usado como seed do gerador aleatório.
+
+Para padronizar também o gerador, vou pedir para que usem o gerador da biblioteca do livro (StdRandom). Mais especificamente a StdRandom.uniform(), que retorna um valor aleatório entre 0 e 1. (claro, para que esta padronização funcione, vocês devem usar o gerador aleatório exclusivamente para gerar os pontos e nada mais. No caso, a cada ponto adicionado, o método uniform() deve ser chamado exatamente duas vezes, uma para a coordenada X e outra para a coordenada Y)
+
+Tentem encontrar uma relação entre o número de pontos e o valor 'd', como especificado pelo professor, e coloquem sua conclusão em um readme ou em um pequeno relatório
+
+ 
+
+Exemplos:
+
+java-algs4 LC2D 0.1 100
+
+17.32 2.3463
+
+ 
+
+java-algs4 LC2D 0.1 100 124392
+
+17.110 1.9652
+
+(DISCLAIMER: Valores acima não foram resultado de nenhum teste - foram inventados apenas para exemplificar o formato)
+ 
+Permalink
+R
+Re: Limiar de conexidade 2D - Enunciado++
+por Rodrigo Enju - sexta, 22 Abr 2016, 10:05
+ 
+
+Atenção: Enunciado modificado. Seu programa também deve aceitar a seed do gerador de números aleatórios, e vocês devem usar o gerador especificado no enunciado

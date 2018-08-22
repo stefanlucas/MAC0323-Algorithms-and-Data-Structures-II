@@ -1,0 +1,34 @@
+Creative Problem 5.3.32 (Unique substrings; Algs4)
+
+Faça o Creative Problem 5.3.32, Unique substrings, de Algs4.  Repita seus estudos dos dígitos de π e também repita seus estudos de seqüências (pseudo-)aleatórias de dígitos.  Sua solução de 5.3.32 é mais eficiente que a solução baseada em tabelas de símbolos?
+
+R
+Creative Problem 5.3.32 (Unique substrings; Algs4) - Enunciado++
+por Rodrigo Enju - segunda, 6 Jun 2016, 06:42
+ 
+
+Esse exercício é bem direto. Resolva o exercício Unique Substrings of Length L usando o algoritmo de Rabin-Karp. Entregue um arquivo UniqueLRK.java contendo sua classe.
+
+ 
+
+A entrada deve ser igual à do exercício anterior, no caso:
+
+Seu programa deve receber um inteiro L na linha de comando, e um texto na entrada padrão. Seu programa deve calcular o número de substrings únicas de comprimento L.
+
+Se L for 0, então você deve calcular qual é o maior valor de L para que o texto seja L-completo (nesse caso, é garantido que o texto será uma sequência de dígitos)
+
+Se além de L ser igual a 0, um segundo argumento inteiro N estiver presente na linha de comando, você deve, ao invéz de ler um texto da entrada padrão, gerar uma sequência pseudo-aleatória de dígitos de tamanho N, e determinar o maior valor de L tal que essa sequência seja L-completa.
+
+ 
+
+Da mesma forma, a saída deve ser:
+
+Se L > 0, seu programa deve devolver um inteiro - o número de substrings únicas de comprimento L.
+
+Se L = 0 (Com ou sem o segundo argumento), seu programa deve devolver um inteiro - o maior valor de L para que o texto seja L-completo.
+
+ 
+
+Relatório:
+
+Entregue também um relatório comparando o desempenho de sua solução com a solução do exercício anterior.

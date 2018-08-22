@@ -1,0 +1,71 @@
+TEXTO TRUNCADO PARA 80 LINHAS
+
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+........
+EP: Lucas-Stefan-Abe_201346_assignsubmission_file_findAll
+NOTA: 133
+CORREÇÃO AUTOMÁTICA
+1600 Pontos (máximo: 1600, dos quais 400 são bônus)
+0 Testes com Falha no corretor (avise o monitor)
+0 Testes com Erro de Compilação (incui o bônus)
+
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/5-3-24/tester/checker/checker' is up to date.
+======= Booyer_006 ============
+Note: ./BoyerMoore.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+real 0m0.163s
+user 0m0.188s
+sys 0m0.024s
+partially correct (200) perfeito
+======= Booyer_007 ============
+
+real 0m0.433s
+user 0m0.648s
+sys 0m0.172s
+partially correct (200) perfeito
+======= Brute_003 ============
+Note: ./Brute.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+real 0m0.174s
+user 0m0.200s
+sys 0m0.052s
+partially correct (200) perfeito
+======= Brute_004 ============
+
+real 0m0.163s
+user 0m0.172s
+sys 0m0.036s
+partially correct (200) perfeito
+======= Brute_005 ============
+
+real 0m0.164s
+user 0m0.164s
+sys 0m0.056s
+partially correct (200) perfeito
+======= KMP_000 ============
+Note: ./KMP.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+real 0m0.161s
+user 0m0.184s
+sys 0m0.028s
+partially correct (200) perfeito
+======= KMP_001 ============
+
+real 0m0.160s
+user 0m0.188s
+sys 0m0.020s
+partially correct (200) perfeito
+======= KMP_002 ============
+
+real 0m0.161s
+user 0m0.196s
+sys 0m0.028s
+partially correct (200) perfeito
+
+Nota: 100

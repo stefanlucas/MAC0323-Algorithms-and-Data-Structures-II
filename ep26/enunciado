@@ -1,0 +1,43 @@
+Creative Problem 5.4.22 (Proof; Algs4)
+
+Faça o Creative Problem 5.4.22, Proof, de Algs4.
+
+Enunciado++
+
+Creative Problem 5.4.22 (Proof; Algs4) - Enunciado++
+por Victor Sena Molero - quarta, 22 Jun 2016, 18:30
+ 
+
+Neste exercício, vocês devem alterar a classe NFA.java para que ela imprima os estados visitados pelo autômato quando ele consegue reconhecer a string dada pela entrada com o padrão dado na entrada.
+
+Um estado é representado por um inteiro, a posição na string do padrão que representa a posição atual do matching, e uma transição é representada por um caractere, um e representa que foi realizada uma epsilon transition e um m representa uma matching transition.
+
+Entrada:
+
+A entrada será dada na entrada padrão (stdin). Na primeira linha, estará representado a expressão regular que será alimentada no NFA, a segunda linha terá um inteiro, a quantidade de strings a serem testadas nessa expressão. Nas linhas seguintes serão dadas strings que deverão ser testadas. Por exemplo:
+
+((A*B|AC)D)
+2
+AAAABD
+ACC
+
+É garantido que nem o padrão nem a string contém uma quebra de linha.
+
+Saída:
+
+A saída deverá ser impressa na saída padrão (stdout). Uma string "true" (sem as aspas) se foi possível realizar o matching com aquela entrada seguida de uma string representando as transições feitas pelo autômato e os estados visitados. Se não foi possível realizar o matching, imprima apenas "false" (sem as aspas). Por exemplo, a entrada dada acima deverá gerar a seguinte saída:
+
+true
+0 e 1 e 2 m 3 e 2 m 3 e 2 m 3 e 2 m 3 e 4 m 5 e 8 e 9 m 10 e 11
+false
+
+ 
+Permalink
+Imagem de Victor Sena Molero
+Re: Creative Problem 5.4.22 (Proof; Algs4) - Enunciado++
+por Victor Sena Molero - sábado, 2 Jul 2016, 19:24
+ 
+
+Pessoal, quando for ler, não precisa colocar parênteses na expressão dada, rodem o programa sobre o que foi dado na entrada padrão, podem assumir que a expressão dada será válida.
+ 
+Permalink | Mostrar principal

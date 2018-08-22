@@ -1,0 +1,7 @@
+Erros (checar https://gist.github.com/victorsenam/87bc44496148fcc477ae126ec4b6c5a3 para explicações)
+[-10] Item(): 1
+[-10] add(int, Item): eu sei, pelos meus testes, que tem algo de errado com esse método, mas não consegui debugar, se quiser podemos fazer isso juntos numa monitoria. Abcs.
+[-5] delete(Item): 4
+[-10] iterator(): 1
+
+Nota: 75

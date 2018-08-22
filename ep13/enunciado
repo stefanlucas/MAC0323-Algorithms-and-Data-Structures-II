@@ -1,0 +1,36 @@
+Faça o Creative Problem 3.5.27 de Algs4.  Não deixe de incluir em seu programa List.java um bom unit test.  (Em algum exercício futuro, você usará sua classe List.)
+
+Método adicional: implemente também o método Item get(int i), que devolve o i-ésimo item da lista.  Este método deve também ter complexidade O(log N), onde N é o número de elementos na lista.
+
+Sugestão. Veja o Web Exercise 3.5.15 (Mutable string) de Algs4: 
+
+http://algs4.cs.princeton.edu/35applications/
+
+Creative Problem 3.5.27 (List) - Enunciado++
+por Rodrigo Enju - sábado, 30 Abr 2016, 16:11
+ 
+
+Olá
+
+ 
+
+Nesse exercício vocês devem implementar a estrutura List como descrita na imagem (e mais o método get(int i) descrito no enunciado) em um arquivo List.java, implementem tambem um unit test (main) para testar sua classe.Não vou especificar como deve ser o teste. Você deve decidir por conta própria o que é um bom unit test para esse exercício (e, por favor, explique em comentários dentro da main o que você está fazendo)
+
+Os métodos size() e isEmpty() devem ser O(1), e o restante devem ser O(log n), sendo n o número de elementos na lista
+
+ 
+
+Entrada: Nenhuma.
+
+Saída: Qualquer
+
+Como podem ver, o exercício é bem aberto, só peço que seu programa não espere entrada nenhuma (ou seja, seu unit test esteja inteiramente contido no código)
+ 
+Permalink
+R
+Re: Creative Problem 3.5.27 (List) - Enunciado++
+por Rodrigo Enju - sábado, 30 Abr 2016, 16:13
+ 
+
+Coloquei as complexidades esperadas dos métodos no enunciado.
+ 

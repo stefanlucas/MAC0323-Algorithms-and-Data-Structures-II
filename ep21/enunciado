@@ -1,0 +1,47 @@
+Creative Problem 5.2.8 (Ordered operations for tries; Algs4)
+
+Faça o Creative Problem 5.2.8, Ordered operations for tries, de Algs4.
+
+Enunciado++
+
+Creative Problem 5.2.8 (Ordered operations for tries) - Enunciado++
+por Victor Sena Molero - quarta, 1 Jun 2016, 18:23
+ 
+
+Olá sorriso
+O enunciado não deixa muita abertura para o que foi pedido. Ou seja, os seguintes métodos
+
+String floor (String x);
+String ceil (String x);
+int rank (String x);
+String select (String x);
+
+A função floor deve devolver a ultima string que vem antes de x ou x, se x está presente na estrutura. A função ceil deve devoler a primeira string lexicograficamente maior ou igual a x. A função select deve devolver a i-ésima string na estrutura e a função rank deve dizer qual é a posição da string na estrutura. Ou seja, elas devem fazer o que fariam como descritas na API.
+
+O nome da classe deve continuar sendo TrieST (sua assinatura não deve mudar). Todas as operações devem custar tempo linear (no tamanho de x). O tamanho do alfabeto é considerado constante aqui.
+
+Nas funções floor e ceil, se não houver nenhuma string que possa ser resposta, devolva null.
+
+Flws
+ 
+Permalink
+Imagem de Victor Sena Molero
+Re: Creative Problem 5.2.8 (Ordered operations for tries) - Enunciado++
+por Victor Sena Molero - segunda, 30 Mai 2016, 19:15
+ 
+
+Mais uma vez, a função main é aberta para vocês. Utilizem da forma que for ajudar mais.
+ 
+Permalink | Mostrar principal
+Imagem de Victor Sena Molero
+Re: Creative Problem 5.2.8 (Ordered operations for tries) - Enunciado++
+por Victor Sena Molero - quarta, 1 Jun 2016, 19:12
+ 
+
+Atentem-se a um caso importante neste exercício. Não precisa entregar como relatório, mas se sua trie funcionar para estes casos, é um ótimo sinal.
+
+Pensem numa trie com as seguintes palavras: "batera" e "bateria". O que ocorre quando buscamos o ceil de "bateram". A resposta deveria ser "bateria". Sua trie responde isso corretamente?
+
+Pense num caso análogo para o floor.
+
+Boa noite.x

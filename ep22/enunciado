@@ -1,0 +1,70 @@
+Faça o Exercício 5.2.2, Unique substrings of length L, de Algs4:
+
+http://algs4.cs.princeton.edu/52trie/
+
+Siga a dica dada no enunciado, usando uma tabela de símbolos implementada com uma TST.
+
+Use seu programa para fazer o seguinte estudo dos dígitos de π. Denote por π(N) a seqüência dos primeiros N dígitos de π. Dizemos que uma seqüência s de dígitos é L-completa se todas as 10^L seqüências de dígitos ocorre em s (isto é, s contém desde 00...0 até 99...9 (L 0s consecutivos e L 9s consecutivos)). Encontre o maior L para o qual π(10^6) é L-completa. Repita o exercício para π(10^7). Você consegue repetir esse exercício para π(10^9)? Veja
+
+http://www.mit.edu/afs.new/sipb/contrib/pi/
+
+Escreva também pequenos programas para gerar seqüências (pseudo-)aleatórias de dígitos de comprimentos arbitrários.  Denote por r(N) uma seqüência de comprimento N gerada pelo seu programa.  Determine o maior L para o qual r(N) é L-completa, para N=10^5, 10^6,... etc (pare quando a determinação de L ficar muito demorada).
+
+Sua solução de 5.2.2 funciona melhor/pior/nem melhor nem pior se você usar uma tabela de símbolos implementada com uma ARNE?  E com uma tabela de hashing?  E com uma 10-way trie?
+
+Enunciado++
+
+R
+Exercise 5.2.2 (Unique substrings of length L; Algs4) - Enunciado++
+por Rodrigo Enju - terça, 31 Mai 2016, 07:02
+ 
+
+Olá sorriso
+
+ 
+
+Nesse exercício você deve implementar um programa calcula o número de substrings únicas em um texto usando uma TST.
+
+O arquivo deve se chamar UniqueL.java
+
+ 
+
+Entrada
+
+Seu programa deve receber um inteiro L na linha de comando, e um texto na entrada padrão. Seu programa deve calcular o número de substrings únicas de comprimento L.
+
+Se L for 0, então você deve calcular qual é o maior valor de L para que o texto seja L-completo (nesse caso, é garantido que o texto será uma sequência de dígitos)
+
+Se além de L ser igual a 0, um segundo argumento inteiro N estiver presente na linha de comando, você deve, ao invéz de ler um texto da entrada padrão, gerar uma sequência pseudo-aleatória de dígitos de tamanho N, e determinar o maior valor de L tal que essa sequência seja L-completa.
+
+Saída
+
+Se L > 0, seu programa deve devolver um inteiro - o número de substrings únicas de comprimento L.
+
+Se L = 0 (Com ou sem o segundo argumento), seu programa deve devolver um inteiro - o maior valor de L para que o texto seja L-completo.
+
+ 
+
+Relatório
+
+Entregue também um relatório comparando o desempenho do seu programa com uma versão usando tabela de símbolos implementada com ARNEs, tabelas de Hash e 10-way Tries.
+
+Assim como, também no relatório, faça o estudo dos dígitos de pi pedido.
+
+1 milhão de dígitos de pi
+
+10 milhões de dígitos de pi
+
+Responda também no relatório qual o maior valor de N para o qual você conseguiu calcular L.
+ 
+Permalink
+R
+Re: Exercise 5.2.2 (Unique substrings of length L; Algs4) - Enunciado++
+por Rodrigo Enju - quinta, 2 Jun 2016, 14:35
+ 
+
+Obs: Você pode assumir que todo o texto estará em uma única linha. Ou seja, não haverão quebras de linha.
+
+ 
+
+Isso deve deixar as coisas um pouco mais simples

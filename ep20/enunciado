@@ -1,0 +1,53 @@
+Creative Problem 4.2.26 (2-satisfiability; Algs4)
+
+Faça o Creative Problem 4.2.26, 2-satisfiability, de Algs4.
+
+Enunciado++
+
+Creative Problem 4.2.26 (2-satisfiability; Algs4) - Enunciado++
+por Victor Sena Molero - segunda, 23 Mai 2016, 23:57
+ 
+
+Olá sorriso
+
+Nome da classe: SAT
+
+Arquivo: SAT.java
+
+Neste enunciado vocês devem resolver o problema da 2-sat para uma expressão em forma conjuntiva normal com n literais e m cláusulas. Ou seja, será dada uma expressão com booleanos, por exemplo (x1 || x2) && (!x3 || x1) && (!x2 || x3) e terá que imprimir uma valoração para a qual a expressão seja verdadeira, neste caso, x1 = true, x2 = false e x3 = false, por exemplo, ou informar caso ela não exista.
+
+Entrada:
+
+A entrada é composta de dois inteiros n e m na primeira linha seguida de m linhas contendo dois inteiros cada, representando uma cláusula. Cada literal será representado por um inteiro natual positivo entre 1 e n, ou seja, o primeiro literal (x1) será representado por 1, o segundo (x2) por 2, e assim por diante. Cada negação de literal será representada pelo número negativo, ou seja, o oposto do literal x1 (!x1) será representado por -1, por exemplo.
+
+Ou seja, alguma das m linhas contiver a expressão 1 -3, você adicionar a cláusula (x1 || !x3) à sua expressão.
+
+Saída:
+
+A saída deve conter, na primeira linha, VERDADE, caso exista uma valoração que satisfaz a expressão dada e MENTIRA, caso contrário. Logo após, deve ser impressa uma única linha com n inteiros 0 ou 1, o i-ésimo inteiro deve ser 0 se este valor é falso na valoração que você achou e 1 se este valor é verdadeiro navaloração que você achou. Se houver mais de uma valoração possível, qualquer uma será aceita.
+
+Exemplo de Entrada 1:
+
+3 3
+1 2
+-3 1
+-2 3
+
+NOTA: A expressão deste exemplo é (x1 || x2) && (!x3 || x1) && (!x2 || x3)
+
+Exemplo de Saída 1 (referente à entrada 1):
+
+VERDADE
+1 0 1
+
+Exemplo de Entrada 2:
+
+5 4
+1 3
+1 -3
+-1 -2
+-1 2
+
+Exemplo de Saída 2 (referente à entrada 2):
+
+MENTIRA

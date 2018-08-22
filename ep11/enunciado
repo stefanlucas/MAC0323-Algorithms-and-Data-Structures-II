@@ -1,0 +1,14 @@
+Problema da conexidade 2D
+
+Suponha que $P_1,\dots,P_n$ sejam pontos no quadrado unitário $Q = [0,1]^2$ e seja $d$ um número real positivo. Declaramos $P_i$ e $P_j$ conexos se a distância entre esses pontos é menor ou igual a $d$. Considere agora o fecho transitivo dessa relação. Dizemos que a configuração de pontos $P_1,\dots,P_n$ é $d$-conexa se essa relação de equivalência tem apenas uma classe de equivalência.
+
+O problema computacional que queremos resolver é como segue.
+
+PC2D: Problema da conexidade 2D
+
+- Entrada: $P_1,\dots,P_n$ ($n\geq1$) pontos no quadrado unitário $Q$ e um número real $d>0$.
+- Problema: determine se $P_1,\dots,P_n$ forma uma configuração $d$-conexa.
+
+Escreva um programa que resolve PC2D. Seu programa será testado para valores grandes de $n$ e valores pequenos de $d$.
+
+Sugestão: veja Web Exercise 1.3.45 (Gridding) de Algs4.

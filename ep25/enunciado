@@ -1,0 +1,74 @@
+Busca de links em páginas WWW
+
+Escreva uma versão melhorada de LinkFinder.java, digamos LinkFinderNEW.java, que obtém uma lista mais completa dos links na página dada. Por exemplo, com o argumento http://www.ime.usp.br, LinkFinder.java gera a lista de links no arquivo IME_ORIG.out. Uma versão melhorada poderia gerar IME_NEW.out.
+
+Implemente LinkFinderNEW.java de forma que, com a opção de linha de comando "-s", a saída é ordenada e sem repetição (como em IME_NEW_SORTED.out).
+
+Bônus. Escreva uma versão alterada/melhorada de WebCrawler.java que encontra um número dado de páginas do IME, isto é, com endereços que começam com http://www.ime.usp.br, que estão "próximas" de http://www.ime.usp.br. Por exemplo, WebCrawlerNEW.java com argumento 200 poderia gerar uma saída parecida com IME.USP.BR.200.
+
+Enunciado++
+
+R
+Busca de links em páginas WWW - Enunciado++
+por Rodrigo Enju - terça, 21 Jun 2016, 06:39
+ 
+
+O enunciado do professor já é bem completo. Nesse exercício, você deve fazer uma versão melhorada da LinkFinder, para encontrar uma lista mais completa dos links na pagina.
+
+ 
+
+O exercicio deve estar em um arquivo LinkFinderNEW.java, e deve seguir o mesmo padrão de entrada e saída da LinkFinder.java.
+
+ 
+
+No caso da WebCrawlerNEW.java, o enunciado também está bem completo. A entrada e saída devem ser iguais à da WebCrawler.java, com a diferença de que, no caso da entrada, um segundo argumento é passado na linha de comando - o número de páginas a serem encontradas.
+
+ 
+
+Seu programa deve então funcionar com os comandos
+
+ 
+
+java-algs4 LinkFinderNEW url
+
+java-algs4 LinkFinderNEW -s url
+
+java-algs4 WebCrawlerNEW url num
+ 
+Permalink
+R
+Re: Busca de links em páginas WWW - Enunciado++
+por Rodrigo Enju - segunda, 20 Jun 2016, 06:47
+ 
+
+Ah, mais um detalhe, sobre a flag -s. Por questão de padronização, vou pedir para que a flag seja lida antes do primeiro argumento.
+
+ 
+
+No caso, devem funcionar as chamadas:
+
+ 
+
+java-algs4 LinkFinderNEW url
+
+java-algs4 LinkFinderNEW -s url
+ 
+Permalink | Mostrar principal
+R
+Re: Busca de links em páginas WWW - Enunciado++
+por Rodrigo Enju - terça, 21 Jun 2016, 06:37
+ 
+
+Mais uma coisa:
+
+ 
+
+No LinkFinder, cuidado para não pegar padrões que não sejam links. Javascripts, mailto, arquivos (file) não são links, e portanto não devem ser parte da saída.
+ 
+Permalink | Mostrar principal
+R
+Re: Busca de links em páginas WWW - Enunciado++
+por Rodrigo Enju - sexta, 1 Jul 2016, 09:40
+ 
+
+Obs: O bônus vale 20 pontos.

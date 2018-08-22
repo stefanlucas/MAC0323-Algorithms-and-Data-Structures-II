@@ -1,0 +1,80 @@
+LOG DE COMPILAÇÃO E TESTE
+Existem dois métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique todos.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros. A saída está trucada (não mostra todas as linha), se quiser ver todo o log, fale comigo
+
+.......WW.WW.W......
+CORREÇÃO AUTOMÁTICA
+Quantidade de Testes | Veredito
+15 | OK
+0 | Tempo de Execução Excedido
+5 | Resposta Errada
+0 | Erro de Execução
+
+rm: não foi possível remover “judge_out/”: Arquivo ou diretório não encontrado
+make: '/home/bcc/victorsenam/private/usp/monitoria/mac323/4-2-35/tester/checker/checker' is up to date.
+======= generated_000 ============
+
+real 0m0.240s
+user 0m0.176s
+sys 0m0.028s
+ok 3 numbers (in increasing order): 0 1 2
+OK
+======= generated_001 ============
+
+real 0m0.188s
+user 0m0.168s
+sys 0m0.020s
+ok 5 numbers (in increasing order): 0 1 2 4 5
+OK
+======= generated_002 ============
+
+real 0m0.194s
+user 0m0.240s
+sys 0m0.028s
+ok 21 numbers (in increasing order): 7 8 ... 116 118
+OK
+======= generated_003 ============
+
+real 0m0.182s
+user 0m0.300s
+sys 0m0.020s
+ok 10 numbers (in increasing order): 11 21 ... 80 112
+OK
+======= generated_004 ============
+
+real 0m0.264s
+user 0m0.464s
+sys 0m0.032s
+ok 436 numbers (in increasing order): 0 5 ... 718 719
+OK
+======= generated_005 ============
+
+real 0m0.836s
+user 0m0.944s
+sys 0m0.068s
+ok 422 numbers (in increasing order): 1 2 ... 581 582
+OK
+======= generated_006 ============
+
+real 0m0.858s
+user 0m1.416s
+sys 0m0.068s
+ok 8 numbers (in increasing order): 3 33 ... 456 504
+OK
+======= generated_007 ============
+
+real 0m0.491s
+user 0m0.576s
+sys 0m0.036s
+wrong answer Expected 0 elements, but 1 found
+Resposta Errada
+======= generated_008 ============
+
+real 0m0.333s
+user 0m0.668s
+sys 0m0.032s
+wrong answer Expected 0 elements, but 6401 found
+Resposta Errada
+======= generated_009 ============
+
+Nota: 75

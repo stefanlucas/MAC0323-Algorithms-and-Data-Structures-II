@@ -1,0 +1,33 @@
+Exercise 3.4.18 (Algs4)
+
+Faça o Ex. 3.4.18 de Algs4.
+
+Imagem de Victor Sena Molero
+Exercise 3.4.18 (Algs4) - Enunciado++
+por Victor Sena Molero - sábado, 30 Abr 2016, 11:52
+ 
+
+Olá sorriso
+Peço desculpas pela demora para postar o enunciado.
+
+Neste exercício, vocês devem alterar a classe SeparateChainingHashST para que ela obedeça à especificação do enunciado, ou seja, devem criar um novo construtor para a classe que receba dois parâmetros, M e K, onde M é o tamanho inicial da tabela de símbolos e K é o limite imposto para o tamanho médio das Chains da tabela, ou seja, o máximo para média de elementos em uma posição da tabela.
+
+É garantido que M é uma potência de 2. Não se deve altera o nome da classe nem remover os construtores já dados, apenas criar um novo construtor. Deve-se usar os primos fornecidos no pdf para distribuir os hashes na tabela.
+
+Bom exercício, abraços.
+ 
+Permalink
+Imagem de Victor Sena Molero
+ATUALIZAÇÃO IMPORTANTE : Exercise 3.4.18 (Algs4) - Enunciado++
+por Victor Sena Molero - domingo, 1 Mai 2016, 20:53
+ 
+
+Oi pessoal, tudo bem?
+Tem um pedido a mais importante para este exercício que eu tinha esquecido de adicionar (sorry):
+
+Criem também uma função (dentro da classe dada) com a seguinte assinatura
+public int[] getSizes();que retorna um vetor de inteiros de tamanho M onde cada posição contém o tamanho da chain referente ao valor M na sua hash table.
+
+Este método deve demorar tempo proporcional a M, não a N.
+
+Abraços.

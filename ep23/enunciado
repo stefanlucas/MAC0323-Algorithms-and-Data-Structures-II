@@ -1,0 +1,38 @@
+Creative Problem 5.3.24 (Find all occurrences; Algs4)
+
+Faça o Creative Problem 5.3.24, Find all occurrences, de Algs4.  
+
+Uma correção.  É suficiente acrescentar findAll() às classes Brute.java e KMP.java, pois não tenho certeza se teremos tempo de discutir o algoritmo de Moyer e Moore (discutiremos Rabin--Karp mais tarde).
+
+Bônus.  Estude o algoritmo de Boyer e Moore e acrescente findAll() à classe BoyerMoore.java.
+
+Creative Problem 5.3.24 (Find all occurrences; Algs4) - Enunciado++
+por Victor Sena Molero - quarta, 8 Jun 2016, 10:33
+ 
+
+Olá, tudo bem?
+
+Acredito que a explicação do yoshi foi suficiente para descrever o que deve ser feito. Vocês devem alterar as classes KMP.java e Brute.java (possivelmente a BooyerMoore.java) para adicionar a função descrita no enunciado com a seguinte assinatura:
+
+Iterable<Integer> findAll(String s);
+
+Ou seja, uma função que recebe uma string e retora um iterador de inteiros que são as posições onde se inicia o padrão definido na string, ou seja, imagine o seguinte trecho de código
+
+KMP match = new KMP("ou");
+Iterable<Integer> iter = match.findAll("Ou sim ou não, não outra coisa"); 
+
+O iterable iter deve iterar pelos inteiros {7, 19}, já que são as ocorrências de "ou" na string.
+
+IMPORTANTE: Garantam que isso compila e roda na rede linux do jeito que vocês me mandaram (na pasta que vocês me mandaram, com os arquivos que vocês me mandaram, com o comando javac-algs4 e java-algs4). Evitem errar a assinatura da função. Não modifiquem o nome da classe nem das funções da classe, se alguma das outras funções da classe parar de funcionar por causa das suas alterações, seu EP estará errado.
+
+Abraços sorriso
+ 
+Permalink
+Imagem de Victor Sena Molero
+Re: Creative Problem 5.3.24 (Find all occurrences; Algs4) - Enunciado++
+por Victor Sena Molero - sábado, 11 Jun 2016, 14:25
+ 
+
+Ops. O brute não tem um constructor com o padrão, então façam uma função
+findAll(String s, String pattern);
+que recebe a string e o pattern. OK? Abraços
