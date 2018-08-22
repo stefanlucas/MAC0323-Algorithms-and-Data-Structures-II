@@ -1,0 +1,31 @@
+Duas filas independentes têm grande chance de gerar permutações diferentes quando alimentadas com a mesma entrada
+OK sorriso
+---------------
+A fila não deve desenfileirar duas vezes o mesmo item
+OK sorriso
+---------------
+A fila deve gerar permutações bem distribuidas (não enviesadas)
+OK sorriso
+---------------
+Gerar uma permutação grande não deve demorar muito tempo
+OK sorriso
+---------------
+É possível alternar operações de enfileirar e desenfileirar sem muitos problemas
+OK sorriso
+---------------
+É possível chamar todos os métodos especificados no enunciado
+OK sorriso
+---------------
+A função sample funciona corretamente
+OK sorriso
+---------------
+A fila funciona com Strings
+OK sorriso
+---------------
+A classe bridge imprime apenas cartas válidas
+OK sorriso
+---------------
+A classe bridge não imprime três vezes a mesma carta
+OK sorriso
+---------------
+Nota final: 100.0
