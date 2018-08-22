@@ -1,0 +1,5 @@
+Faça o Creative Ex. 1.6.15 (Hubs and authorities) de IntroCS:
+
+http://introcs.cs.princeton.edu/java/16pagerank/
+
+Observação. A regra que rege o comportamento de nosso random surfer não está bem definida em um caso: se ele estiver em uma página sem links, então com 90% de chance ele não vai saber o que fazer (pois ele não pode escolher um link aleatório para clicar). Use portanto a seguinte regra adicional: se a página atual não tem links, vá para uma página aleatória (isto é, use a regra que, usualmente, aplicamos com 10% de probabilidade).
