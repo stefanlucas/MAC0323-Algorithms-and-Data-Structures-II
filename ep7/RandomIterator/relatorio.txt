@@ -1,0 +1,22 @@
+/**************************************************************************
+* Nome: Lucas Stefan Abe
+* Nº USP: 8531612
+***************************************************************************/
+ 
+ Relatório
+
+ Quais testes estatísticos eu aprendi para verificar se meu iterador aleatório está correto?
+ 
+ Para verificar se meu iterador aleátorio está correto, realizei
+ o teste para diferentes valores de N. Para cada N, primeiro 
+ realizei testes com T proximo de N!, a diferença entre as frequencias
+ são variaveis. Depois, realizei testes com T >>> N!, neste caso
+ a diferença entre as frequencias devem ser minimas e o histograma
+ possui uma distribuição praticamente uniforme.
+
+ Esboço de correção do iterador:
+
+ Seja T o numero de testes, N a quantidade de elementos, e f(xi) 
+ a frequencia da permutação xi com i pertencente a [0, N!], temos:
+
+ lim T-> infito f(xi) = L 

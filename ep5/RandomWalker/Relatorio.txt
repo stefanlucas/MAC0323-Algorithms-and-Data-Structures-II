@@ -1,0 +1,17 @@
+Conclusões sobre a pergunta do enunciado:
+
+Realizando diversos experimentos observa-se que a distancia
+do random walker tende a acompanhar o crescimento de N, 
+portanto quando o N é muito grande, a tendencia é de que
+a distancia da origem também seja grande.
+
+Observações sobre a classe Distribuition:
+
+Observa-se que a classe distribuition se comporta de uma
+maneira interessante. Observa-se que quando colocamos
+valores de M muito maiores que os de N, a figura tende
+a obedecer um certo padrão. Quando pegamos valores de N 
+muito maiores que os de M ocorre o contrário, a figura 
+apresenta diversas formas. O que ambos os casos tem em
+comum é que os quadrados mais visitados tendem a ser
+conexos.
