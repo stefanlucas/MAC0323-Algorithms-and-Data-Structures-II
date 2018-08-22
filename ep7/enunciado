@@ -1,0 +1,43 @@
+Creative Problem 1.3.36 (Random iterator; Algs4)
+
+Faça o Creative Problem 1.3.36 (Random iterator) de Algs4.  
+
+Ademais, escreva um cliente chamado TesteVisual.java para verificar a correção de seu iterador aleatório. Quando sua fila tem N elementos, seu iterador deve iterar pelos elementos da fila em uma ordem aleatória, com todas as N! ordens equiprováveis.
+
+Para verificar a propridade acima, TesteVisual deve fazer o seguinte: a entrada de TesteVisual deve ser um inteiro N e um outro inteiro T. TesteVisual deve inserir os inteiros 1,...,N na fila, nessa ordem. TesteVisual deve então iterar sobre os elementos na fila, usando seu iterador aleatório, e deve verificar qual permutação de 1,...,N é produzida. Esse experimento deve ser repetido T vezes. Ao final, T permutações serão produzidas. TesteVisual deve gerar um histograma que mostra quantas vezes cada permutação foi produzida. (Não é necessário "rotular" cada barra da permutação com a altura ou com a permutação que aquela barra representa.) Use Histogram.java de IntroCS:
+
+http://introcs.cs.princeton.edu/java/32class/
+
+Verifique seu iterador para N = 6 (caso correspondente a um dado usual, de 6 faces).
+
+Observação.  Se seu iterador estiver correto, os histogramas produzidos serão meio sem graça. Quais testes estatísticos você aprendeu para verificar se seu iterador aleatório está correto?  Alternativamente/adicionalmente, esboce uma prova formal da correção de seu iterador.
+
+Sigam as Instruções do Enunciado++
+
+Imagem de Victor Sena Molero
+Creative Problem 1.3.36 (Random iterator; Algs4) - Enunciado++
+por Victor Sena Molero - quarta, 16 Mar 2016, 16:26
+ 
+
+O enunciado postado já é bastante completo. Basta receber N e T como argumento e nada deve ser impresso na saída padrão. O seu programa deve apenas desenhar o histograma.
+
+Também é necessário, como no Random Walker, um relatório em qualquer extensão que eu consiga abrir no Chrome ou no vim que descreva o que o Yoshi pediu.
+
+Abraços.
+ 
+Permalink
+Imagem de Victor Sena Molero
+Re: Creative Problem 1.3.36 (Random iterator; Algs4) - Enunciado++
+por Victor Sena Molero - quinta, 24 Mar 2016, 13:15
+ 
+
+Sobre o histograma:
+Vocês vão plottar todas as ocorrências das permutações, cada permutação é representada por uma coluna. Existem algumas variações disso, todas vão ser aceitas, por exemplo:
+
+    Você pode nunca imprimir colunas vazias, ou seja, toda permutação que não apareceu vai ser desconsiderada e você só imprime as colunas referentes às permutações que aconteceram.
+    Você imprime exatamente N! colunas. Existem dois jeitos de fazer isso, os dois são interessantes;
+    Você imprime mais do que N! colunas, talvez muito mais. Se as colunas ficarem muito pequenas (quão pequenas? desde que dê pra ver no monitor da Rede Linux tá tudo bem) você perde pontos ok? Seu histograma deve ser útil para observar os dados, colunas invisíveis não são úteis.
+
+Lembre-se que o programa deve funcionar com 1 <= N <= 6.
+
+A ordem com que as colunas de cada permutação aparecem também não importa, você pode fazer, por exemplo, a permutação (6 5 4 3 2 1) aparecer à direita da (1 2 3 4 5 6). Sem problemas. 
