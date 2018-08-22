@@ -1,0 +1,39 @@
+Victor Sena Molero - Sex, 18 Mar 2016, 17:29
+Eu não consegui rodar seu código. Tentei no java da rede linux. Vou te dar 0 por enquanto e, se houver alguma explicação razoável e um jeito fácil de corrigir que você consiga me explicar recorrijo seu ep. :/
+O erro de execução:
+Exception in thread "main" java.lang.IllegalArgumentException: Comparison method violates its general contract!
+at java.util.ComparableTimSort.mergeHi(ComparableTimSort.java:866)
+at java.util.ComparableTimSort.mergeAt(ComparableTimSort.java:483)
+at java.util.ComparableTimSort.mergeCollapse(ComparableTimSort.java:404)
+at java.util.ComparableTimSort.sort(ComparableTimSort.java:213)
+at java.util.Arrays.sort(Arrays.java:1312)
+at java.util.Arrays.sort(Arrays.java:1506)
+at java.util.ArrayList.sort(ArrayList.java:1454)
+at java.util.Collections.sort(Collections.java:141)
+at WordFrequencies.main(WordFrequencies.java:91)
+Command exited with non-zero status 1
+-------------------------
+a versão do java:
+openjdk version "1.8.0_72-internal"
+OpenJDK Runtime Environment (build 1.8.0_72-internal-b15)
+OpenJDK 64-Bit Server VM (build 25.72-b15, mixed mode)
+Imagem de Lucas Stefan AbeLucas Stefan Abe - Sex, 18 Mar 2016, 21:31
+Como assim? o.O Aqui no meu notebook ta rodando, a única coisa que eu usei foi as bibliotecas do livro e o java.util.*. Para compilar eu usei javac-introcs WordFrequencies.java e só.
+Imagem de Lucas Stefan AbeLucas Stefan Abe - Sex, 18 Mar 2016, 21:32
+Minha versão do java;
+java version "1.7.0_95"
+OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-0ubuntu0.14.04.1)
+OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode)
+Imagem de Lucas Stefan AbeLucas Stefan Abe - Sex, 18 Mar 2016, 21:33
+Na hora de executar ta dando tudo certo também
+Imagem de Lucas Stefan AbeLucas Stefan Abe - Sex, 18 Mar 2016, 21:35
+Se você quiser, posso levar meu notebook e mostrar que está funcionando normal aqui
+Imagem de Victor Sena MoleroVictor Sena Molero - Ter, 22 Mar 2016, 10:53
+Bom, eu tentei de novo em outro java e não rolou. Pode me mandar o seu arquivo javac-introcs? Se quiser semana que vem a gente cola na linux ou vc tras seu note e tenta fazer isso juntos.
+Abraços
+Imagem de Lucas Stefan AbeLucas Stefan Abe - Sex, 25 Mar 2016, 21:27
+Beleza, levo meu note semana que vem então. Pode ser que dia?
+Imagem de Victor Sena MoleroVictor Sena Molero - Seg, 28 Mar 2016, 08:47
+Na monitoria mesmo, ok? Terça feira, no aquário. Abcs sorriso
+
+Nota: 0
