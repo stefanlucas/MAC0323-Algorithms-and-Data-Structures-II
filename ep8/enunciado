@@ -1,0 +1,65 @@
+Creative Exercise 1.5.20 (Dynamic growth; Algs4)
+
+Faça o Creative Exercise 1.5.20 (Dynamic growth), de Algs4.  Use as implementações de union-find do livro, escolhendo as mais eficientes (exatamente qual escolher fica a seu critério, desde que seja uma das mais eficientes).  Este programa será usado no próximo exercício (ainda a ser anunciado), em que o número de objetos que seu UF terá de manipular será (bem) grande.  Note que, neste exercício, você precisará escrever pouco código (basta combinar/adaptar códigos que já conhecemos).
+
+Enunciado++ << Atualizado 31/3
+
+Creative Exercise 1.5.20 (Dynamic Growth) - Enunciado++
+por Rodrigo Enju - quinta, 31 Mar 2016, 06:44
+ 
+
+Oi sorriso
+
+Nesse exercício, vocês devem implementar uma Weighted Quick-Union with Path Compression dinâmica, ou seja, que não precisa do número de sites à priori.
+
+Na implementação que vocês viram, o número N de sites é passado como parâmetro para a criação da UF.
+
+Tudo que vocês precisam fazer nesse exercício é mudar um pouco essa implementação, de forma que ao invéz de criar uma UF com um número fixo de sites, seja possivel aumentar esse número de sites durante a execução do programa.
+
+Para isso, implementem o método newSite(), que cria um novo site e devolve o seu número identificador (Por exemplo, se seu UF tem os sites de 0 até 9, uma chamada do newSite deveria modificar o UF, para que tenha agora sites de 0 até 10, sem perder os pares feitos anteriormente, e devolver 10)
+
+Implementem também um unit test (um main() ) para testar seu algoritmo. Nele, você deve ler da entrada padrão uma sequencia de pares de inteiros, representando as ligações a serem feitas.
+
+Por favor, leiam os pares da entrada padrão e não da linha de comando, assim como o usado nos algoritmos do livro (  while(!StdIn.isEmpty()){ etc..  )
+
+ 
+
+Testem para casos grandes - no meu exemplo os sites são criados sequencialmente, portanto, caso em algum ponto do algoritmo seu UF tem 6 sites (de 0 até 5) e eu pedir para criar o par 4 1000000, então seu UF deve ser redimensionado para ter 1000001 sites (de 0 até 1000000). Como o professor disse, esse código será usado para manipular UFs com números bem grandes de objetos, então tentem fazer com que funcione para o valor mais alto que conseguirem
+
+ 
+
+O nome do arquivo a ser entregue deve ser DynamicWeightedQuickUnionUF.java com a main que faz os testes.
+
+Seu programa deve compilar com:
+
+javac-algs4 DynamicWeightedQuickUnionUF.java
+
+e rodar com
+
+java-algs4 DynamicWeightedQuickUnionUF < dados.txt
+
+Onde dados.txt é um arquivo de texto com os pares a serem usados para criar a UF
+
+ 
+
+A saída do programa deve ser uma lista de pares de inteiros, um par por linha, de forma que o primeiro seja o identificador de um site, e o segundo seja a componente da qual pertence.
+
+Para evitar que a saída seja gigantesca, não imprima as raízes (aquelas que o identificador do site e o número da componente são iguais)
+ 
+Permalink
+R
+Re: Creative Exercise 1.5.20 (Dynamic Growth) - Enunciado++
+por Rodrigo Enju - quinta, 31 Mar 2016, 06:47
+ 
+
+ATENÇÃO
+
+ 
+
+Enunciado modificado - por recomendação do professor, vou pedir para que façam o exercício usando também compressão de caminhos
+
+Não vou mudar o nome do arquivo a ser entregue (até porque já está bem grande)
+
+ 
+
+Para aqueles que já começaram/entregaram, me desculpem por avisar de última hora
